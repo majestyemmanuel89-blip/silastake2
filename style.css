@@ -1,0 +1,151 @@
+/* Global */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background: #fffaf0;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0; width: 100%;
+  display: flex; justify-content: space-between; align-items: center;
+  background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 15px 20px; z-index: 100;
+}
+.navbar .logo {
+  font-family: 'Playfair Display', serif;
+  color: #b8860b;
+  font-size: 20px; font-weight: 600;
+}
+.navbar ul {
+  list-style: none; display: flex; gap: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #b8860b;
+}
+
+/* Hero */
+.hero {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  height: 90vh;
+  display: flex; align-items: center; justify-content: center;
+  text-align: center; color: #fff;
+}
+.hero-overlay {
+  background: rgba(0,0,0,0.5);
+  padding: 40px;
+}
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2em;
+  color: #ffd700;
+}
+.hero p {
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+/* About */
+.about {
+  padding: 80px 20px 40px;
+  text-align: center;
+}
+.about h2 {
+  color: #b8860b;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+.about p {
+  max-width: 700px; margin: auto;
+  line-height: 1.7;
+}
+
+/* Bible Box */
+.bible-box {
+  position: fixed;
+  right: 15px; top: 120px;
+  width: 280px;
+  background: #fffbe6;
+  border: 2px solid #b8860b;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 15px;
+  font-style: italic;
+}
+.bible-box h3 {
+  color: #b8860b;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#verse-text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Events */
+.events {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+.events h2 {
+  color: #b8860b;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 25px;
+}
+.event-list {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;
+}
+.event-card {
+  background: #fffaf0;
+  border: 1px solid #b8860b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.3s ease;
+}
+.event-card:hover {
+  background: #fffbe6;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Contact */
+.contact {
+  padding: 60px 20px;
+  text-align: center;
+  background: #fffaf0;
+}
+.contact h2 {
+  color: #b8860b;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+.contact p { margin-bottom: 5px; }
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #b8860b;
+  color: white;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .bible-box {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+  }
+  .event-list { flex-direction: column; align-items: center; }
+}
